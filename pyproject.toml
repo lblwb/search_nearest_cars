@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "search-nearest-cars"
+version = "0.1.0"
+description = ""
+authors = ["Dmitrii Ivanov <dmitriy.site1@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = {extras = ["all"], version = "^0.111.0"}
+alembic = "^1.13.1"
+sqlalchemy = "^2.0.30"
+asyncpg = "^0.29.0"
+geopy = "^2.4.1"
+gunicorn = "^22.0.0"
+redis = "^5.0.4"
+celery = "^5.4.0"
+flower = "^2.0.1"
+isort = "^5.13.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
